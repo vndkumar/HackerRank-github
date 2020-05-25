@@ -1,0 +1,30 @@
+/*
+ * Complete the 'fizzBuzz' function below.
+ *
+ * The function accepts INTEGER n as parameter.
+ */
+
+void fizzBuzz(int n) {
+    int count = 1;  /* Counting the integer values till n */
+    while(count <= n)
+    {
+        if(((count % 3) == 0) && ((count % 5) == 0))
+        {
+            printf("FizzBuzz\n");
+        }
+        else if((count % 3) == 0)
+        {
+            printf("Fizz\n");
+        }
+        else if((count % 5) == 0)
+        {
+            printf("Buzz\n");
+        }
+        else 
+        {
+            /* Non multiple of 3 or 5 */
+            printf("%d\n",count);
+        }
+        count++;
+    }
+}
